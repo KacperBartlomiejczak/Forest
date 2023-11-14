@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forest</title>
     <script src="https://kit.fontawesome.com/97744437c4.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9ac728543b.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -13,17 +14,66 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="nav__wrapper">
-            <h1 class="nav__header">Forest</h1>
-        </div>
-        <ul class="nav-items">
-            <li class="nav__items">Home<a href="#" class="nav__link"></a></li>
-            <li class="nav__items">O nas<a href="#" class="nav__link"></a></li>
-            <li class="nav__items">Oferta<a href="#" class="nav__link"></a></li>
-            <li class="nav__items">Kontakt<a href="#" class="nav__link"></a></li>
-        </ul>
-    </nav>
+    <main>
+        <nav class="nav">
+            <div class="nav__wrapper">
+                <i class="fa-solid fa-tree"></i>
+                <h1 class="nav__header">Forest</h1>
+            </div>
+            <button class="hamburger">
+                <div class="hamburger__bar"></div>
+            </button>
+            <div class="nav__items">
+                <a href="#" class="nav__item">Home</a>
+                <a href="#" class="nav__item">O nas</a>
+                <a href="#" class="nav__item">Oferta</a>
+                <a href="#" class="nav__item">Kontakt</a>
+            </div>
+        </nav>
+        <header class="header">
+            <h2 class="header__heading">Forest Group</h2>
+            <p class="header__text">Najpiękniejszy park w Twojej okolicy!</p>
+        </header>
+        <section class="about">
+            <h1 class="heading">O nas</h1>
+            <div class="container">
+                <img src="./dist/img/water-phone.jpeg" alt="Wyspa nad jeziorem a w tle las">
+                <div class="about__wrapper">
+                    <h3>Niezapomniane przygody</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nisi, maxime laborum nam aperiam
+                        suscipit fugit at repudiandae reprehenderit vel eaque corrupti dolore doloribus hic rerum
+                        consequuntur numquam commodi iste.</p>
+                </div>
+            </div>
+        </section>
+        <section class="ad">
+            <h1 class="ad__heading">Przygoda dla całej rodziny</h1>
+        </section>
+        <section class="offer">
+            <h1 class="heading">
+                Oferta</h1>
+            <p class="offer__text">Wybierz jedną z naszych wspaniałych ofert!</p>
+            <div class="offer__cards">
+                <div class="card">
+                    <p class="card__heading">Standard</p>
+                    <h2 class="card__price">$99</h2>
+                    <ul class="card__benefits">
+                        <div class="card__container">
+                        <li class="card__benefit">opcja w pakiecie</li>
+                        <li class="card__benefit">opcja w pakiecie</li>
+                        <li class="card__benefit">opcja w pakiecie</li>
+                        <li class="card__benefit card__benefit--disable">opcja poza pakietem</li>
+                        <li class="card__benefit card__benefit--disable">opcja poza pakietem</li>
+                    </ul>
+                    <button class="card__submit-btn">Wybierz</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
     <script src="./dist/js/index.min.js"></script>
 </body>
 
