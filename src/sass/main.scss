@@ -10,16 +10,17 @@ html {
 	scroll-behavior: smooth;
 }
 body {
+	width: 100%;
 	font-family: "Roboto", sans-serif;
 	color: #333;
 }
 main {
-	width: 100vw;
+	width: 100%;
 	overflow-x: clip;
 }
 .heading {
 	font-weight: lighter;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	margin: 1em 0 0.7em 0;
 }
 .nav {
@@ -28,6 +29,7 @@ main {
 	width: 100vw;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	padding: 1em;
 	background-color: #fff;
 	z-index: 100;
 
@@ -94,13 +96,14 @@ main {
 		&:hover,
 		&:focus {
 			cursor: pointer;
-			.hamburger__bar::before,
-			.hamburger__bar::after {
-				width: 50px;
-			}
 		}
 	}
-
+	.hamburger--open {
+		.hamburger__bar::before,
+		.hamburger__bar::after {
+			width: 50px;
+		}
+	}
 	&__items {
 		position: absolute;
 		top: 0;
@@ -208,7 +211,7 @@ main {
 
 .ad {
 	position: relative;
-	min-height: 120px;
+	min-height: 160px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -227,9 +230,9 @@ main {
 		z-index: -1;
 	}
 	&__heading {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 		font-weight: normal;
-		padding: 1em 2em;
+		padding: 1.5em 2em;
 		border: 1px solid white;
 		color: #fff;
 		z-index: 2;
@@ -245,11 +248,13 @@ main {
 		margin-bottom: 0em;
 	}
 	&__text {
-		margin: 2em;
+		font-size: 1.6rem;
+		margin: 1.5em;
+		text-align: center;
 	}
 	.card {
 		width: 260px;
-		height: 335px;
+		height: 345px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -258,33 +263,162 @@ main {
 		border-radius: 10px;
 		box-shadow: 0px 0px 7px 1px rgba(159, 159, 159, 1);
 		&__heading {
-			font-size: 2rem;
+			font-size: 2.5rem;
 			font-weight: lighter;
 			margin-bottom: 0.5em;
 		}
 		&__price {
 			position: relative;
-			font-size: 3rem;
+			font-size: 3.5rem;
+			margin-bottom: 0.2em;
 		}
-
+		&__benefits {
+			margin: 0.5em 0;
+		}
+		&__container {
+			position: relative;
+			display: flex;
+			align-items: center;
+			.checkmark-icon,
+			.remove-icon {
+				position: relative;
+				bottom: 5px;
+				left: 0;
+				font-size: 1.5rem;
+				margin-right: 0.5em;
+			}
+			.checkmark-icon {
+				color: green;
+			}
+			.remove-icon {
+				color: rgb(132, 132, 132);
+			}
+		}
 		&__benefit {
-			gap: 1em;
 			font-size: 1.4rem;
-			list-style-type: "\1F5F8";
+			font-weight: lighter;
+			list-style-type: none;
+			margin-bottom: 1em;
+
 			&:last-child {
 				margin-bottom: 1em;
+			}
+			&--disable {
+				color: rgb(132, 132, 132);
 			}
 		}
 
 		&__submit-btn {
+			position: relative;
 			width: 80%;
 			height: 35px;
 			margin-top: 1em;
-			background-color: #38eb4a;
+			background-color: white;
 			border-radius: 8px;
 			border: none;
-			font-weight: lighter;
+			font-weight: normal;
 			font-size: 1.4rem;
+			box-shadow: 0px 0px 7px 1px rgba(159, 159, 159, 1);
+			overflow: hidden;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 100px;
+				height: 20px;
+				transform: rotate(-75deg);
+				right: 100%;
+				background-color: rgba(108, 108, 108, 0.182);
+				transition: right 0.75s;
+			}
+			&:hover,
+			&:focus {
+				&::before {
+					right: -100%;
+				}
+			}
 		}
+	}
+
+	.card--middle {
+		.card__submit-btn {
+			background-color: #38eb4a;
+			box-shadow: 0px 0px 7px 1px #38eb4a;
+		}
+	}
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ebebeb;
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1em;
+		padding: 2em;
+	}
+	&__heading {
+		margin-left: 0.2em;
+	}
+	&__heading,
+	.fa-tree {
+		font-size: 2.5rem;
+	}
+	&__items {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-content: center;
+		padding: 0 3em;
+		margin-bottom: 2em;
+	}
+	.items {
+		justify-self: center;
+		display: flex;
+		flex-direction: column;
+
+		align-items: center;
+		&__heading {
+			font-size: 1.4rem;
+			text-align: center;
+			margin-bottom: 0.5em;
+		}
+		&:nth-child(2) {
+			margin: 0 1.5em;
+		}
+		&__item {
+			font-size: 1.2rem;
+			text-align: center;
+			list-style-type: none;
+			font-weight: lighter;
+			padding: 0.5em;
+
+			a {
+				text-decoration: none;
+				color: black;
+				transition: color 0.3s;
+				&:hover,
+				&:focus {
+					color: #53c98c;
+				}
+			}
+		}
+	}
+	&__content {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-top: 1px solid black;
+		padding: 2em;
+		margin-top: 1em;
+	}
+	&__text {
+		font-size: 1.4rem;
+		font-weight: lighter;
 	}
 }

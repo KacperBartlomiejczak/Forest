@@ -1,10 +1,12 @@
 const burgerBtn = document.querySelector(".hamburger")
 const navItems = document.querySelector(".nav__items")
+const navItem = document.querySelectorAll(".nav__item")
+const yearEl = document.querySelector(".footer__year")
 
+let year = new Date().getFullYear()
 //Nav toggle
 let isNavOpen = false
-
-const toggleNavHandler = params => {
+const toggleNavHandler = event => {
 	if (isNavOpen === false) {
 		navItems.classList.add("nav__items--open")
 		burgerBtn.classList.add("hamburger--open")
@@ -16,10 +18,14 @@ const toggleNavHandler = params => {
 	}
 }
 
+
+yearEl.textContent = year
 //Event listners
 burgerBtn.addEventListener("click", toggleNavHandler) //BurgerEvent
-ham = document.querySelector(".hamburger")
-
-ham.addEventListener("click", () => {
-	ham.classList.toggle("active")
-})
+navItem.forEach(item =>
+	item.addEventListener("click", () => {
+		navItems.classList.remove("nav__items--open")
+		burgerBtn.classList.remove("hamburger--open")
+		isNavOpen = false
+	})
+)
