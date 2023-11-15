@@ -15,23 +15,27 @@
 <body>
     <main>
         <nav class="nav">
-            <div class="nav__wrapper">
-                <i class="fa-solid fa-tree"></i>
-                <h1 class="nav__header">Forest</h1>
-            </div>
-            <button class="hamburger">
-                <div class="hamburger__bar"></div>
-            </button>
-            <div class="nav__items">
-                <a href="#" class="nav__item">Home</a>
-                <a href="#" class="nav__item">O nas</a>
-                <a href="#" class="nav__item">Oferta</a>
-                <a href="#" class="nav__item">Kontakt</a>
+            <div class="nav__container">
+                <div class="nav__wrapper">
+                    <i class="fa-solid fa-tree"></i>
+                    <h1 class="nav__header">Forest</h1>
+                </div>
+                <button class="hamburger">
+                    <div class="hamburger__bar"></div>
+                </button>
+                <div class="nav__items">
+                    <a href="#" class="nav__item">Home</a>
+                    <a href="#" class="nav__item">O nas</a>
+                    <a href="#" class="nav__item">Oferta</a>
+                    <a href="#" class="nav__item">Kontakt</a>
+                </div>
             </div>
         </nav>
         <header class="header">
-            <h2 class="header__heading">Forest Group</h2>
-            <p class="header__text">Najpiękniejszy park w Twojej okolicy!</p>
+            <div class="header__container">
+                <h2 class="header__heading">Forest Group</h2>
+                <p class="header__text">Najpiękniejszy park w Twojej okolicy!</p>
+            </div>
         </header>
         <section class="about">
             <h1 class="heading">O nas</h1>
@@ -39,9 +43,12 @@
                 <img src="./dist/img/water-phone.jpeg" alt="Wyspa nad jeziorem a w tle las">
                 <div class="about__wrapper">
                     <h3>Niezapomniane przygody</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nisi, maxime laborum nam aperiam
-                        suscipit fugit at repudiandae reprehenderit vel eaque corrupti dolore doloribus hic rerum
-                        consequuntur numquam commodi iste.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. www.MMCSchool.pl
+                    </p>
                 </div>
             </div>
         </section>
@@ -52,8 +59,10 @@
             <h1 class="heading">
                 Oferta</h1>
             <p class="offer__text">Wybierz jedną z naszych wspaniałych ofert!</p>
-            <div class="offer__cards">
-                <div class="card card">
+            <div class="cards">
+
+
+                <div class="card">
                     <p class="card__heading">Demo</p>
                     <h2 class="card__price">$0</h2>
                     <ul class="card__benefits">
@@ -80,6 +89,8 @@
                     </ul>
                     <button class="card__submit-btn">Wybierz</button>
                 </div>
+
+
                 <div class="card card--middle">
                     <p class="card__heading">Standard</p>
                     <h2 class="card__price">$99</h2>
@@ -107,7 +118,9 @@
                     </ul>
                     <button class="card__submit-btn">Wybierz</button>
                 </div>
-                <div class="card card">
+
+
+                <div class="card ">
                     <p class="card__heading">Premium</p>
                     <h2 class="card__price">$299</h2>
                     <ul class="card__benefits">
@@ -138,29 +151,31 @@
 
         </section>
         <footer class="footer">
-            <div class="footer__wrapper">
-                <i class="fa-solid fa-tree"></i>
-                <h1 class="footer__heading">Forest</h1>
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <i class="fa-solid fa-tree"></i>
+                    <h1 class="footer__heading">Forest</h1>
+                </div>
+                <ul class="footer__items">
+                    <ul class="items">
+                        <h3 class="items__heading">O nas</h3>
+                        <li class="items__item"><a href="#">Historia</a></li>
+                        <li class="items__item"><a href="#">Parki</a></li>
+                        <li class="items__item"><a href="#">Opinie</a></li>
+                    </ul>
+                    <ul class="items">
+                        <h3 class="items__heading">Nasza Firma</h3>
+                        <li class="items__item"><a href="#">Praca</a></a></li>
+                        <li class="items__item"><a href="#">Kadry</a></li>
+                        <li class="items__item"><a href="#">Zarząd</a></li>
+                    </ul>
+                    <ul class="items">
+                        <h3 class="items__heading">Dokumenty</a></h3>
+                        <li class="items__item"><a href="#">Wnioski</a></li>
+                        <li class="items__item"><a href="#">Rezerwacje</a></li>
+                    </ul>
+                </ul>
             </div>
-            <ul class="footer__items">
-                <ul class="items">
-                    <h3 class="items__heading">O nas</h3>
-                    <li class="items__item"><a href="#">Historia</a></li>
-                    <li class="items__item"><a href="#">Parki</a></li>
-                    <li class="items__item"><a href="#">Opinie</a></li>
-                </ul>
-                <ul class="items">
-                    <h3 class="items__heading">Nasza Firma</h3>
-                    <li class="items__item"><a href="#">Praca</a></a></li>
-                    <li class="items__item"><a href="#">Kadry</a></li>
-                    <li class="items__item"><a href="#">Zarząd</a></li>
-                </ul>
-                <ul class="items">
-                    <h3 class="items__heading">Dokumenty</a></h3>
-                    <li class="items__item"><a href="#">Wnioski</a></li>
-                    <li class="items__item"><a href="#">Rezerwacje</a></li>
-                </ul>
-            </ul>
             <div class="footer__content">
                 <p class="footer__text">&copy; <span class="footer__year"></span> Forest Group Company Ltd.</p>
             </div>

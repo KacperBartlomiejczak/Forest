@@ -23,16 +23,26 @@ main {
 	font-size: 3rem;
 	margin: 1em 0 0.7em 0;
 }
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 .nav {
 	position: sticky;
 	top: 0;
 	width: 100vw;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	padding: 1em;
 	background-color: #fff;
 	z-index: 100;
-
+	&__container {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: center;
+		align-items: center;
+		padding: 1em;
+	}
 	&__wrapper {
 		display: flex;
 		max-width: 800px;
@@ -60,7 +70,6 @@ main {
 		margin: 1em 0.5em;
 		padding: 1em;
 		justify-self: end;
-		align-self: center;
 		background-color: transparent;
 		border: none;
 		transition: width 0.3s;
@@ -115,7 +124,6 @@ main {
 		justify-content: center;
 		align-items: center;
 		background-color: white;
-
 		transition: transform 0.3s;
 	}
 	.nav__items--open {
@@ -136,7 +144,6 @@ main {
 		}
 	}
 }
-
 .header {
 	position: relative;
 	min-height: 180px;
@@ -146,6 +153,10 @@ main {
 	background-image: url(../../dist/img/jungle-phone.jpeg);
 	background-size: cover;
 	background-position: center;
+	&__container {
+		padding: 0.5em;
+		z-index: 2;
+	}
 	&::before {
 		content: "";
 		position: absolute;
@@ -167,7 +178,6 @@ main {
 	&__text {
 		color: white;
 		padding-left: 20px;
-		z-index: 2;
 	}
 }
 
@@ -177,12 +187,6 @@ main {
 	justify-content: center;
 	align-items: center;
 
-	.container {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
 	img {
 		width: 250px;
 		object-fit: cover;
@@ -193,6 +197,7 @@ main {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin-top: 2em;
 		padding-bottom: 2em;
 		h3 {
 			font-size: 1.8rem;
@@ -203,12 +208,10 @@ main {
 			font-size: 1.3rem;
 			font-weight: lighter;
 			line-height: 20px;
-
 			text-align: center;
 		}
 	}
 }
-
 .ad {
 	position: relative;
 	min-height: 160px;
@@ -238,7 +241,6 @@ main {
 		z-index: 2;
 	}
 }
-
 .offer {
 	display: flex;
 	flex-direction: column;
@@ -346,7 +348,6 @@ main {
 		}
 	}
 }
-
 .footer {
 	display: flex;
 	flex-direction: column;
@@ -380,7 +381,6 @@ main {
 		justify-self: center;
 		display: flex;
 		flex-direction: column;
-
 		align-items: center;
 		&__heading {
 			font-size: 1.4rem;
@@ -422,3 +422,8 @@ main {
 		font-weight: lighter;
 	}
 }
+
+// Media Queries
+@import "./media/_small.scss";
+@import "./media/_medium.scss";
+@import "./media/_large.scss";

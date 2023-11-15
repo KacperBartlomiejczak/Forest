@@ -1,0 +1,85 @@
+@media (min-width: 768px) {
+	.heading {
+		font-size: 4rem;
+	}
+	.nav {
+		&__container{
+			padding: 1.5em;
+		}
+		&__header,
+		.fa-tree {
+			font-size: 3.5rem;
+		}
+		&__item {
+			font-size: 3.2rem;
+		}
+	}
+	.header {
+		min-height: 300px;
+		&__heading {
+			font-size: 2.5rem;
+		}
+		&__text {
+			font-size: 2.8rem;
+		}
+	}
+	.about {
+		img {
+			width: 400px;
+		}
+		.about__wrapper {
+			padding-bottom: 3em;
+			h3 {
+				font-size: 2.8rem;
+			}
+			p {
+				font-size: 2rem;
+				line-height: 35px;
+			}
+		}
+	}
+	.ad {
+		min-height: 200px;
+		&__heading {
+			font-size: 3rem;
+			padding: 1em 4em;
+		}
+	}
+	.offer {
+		&__text {
+			font-size: 2rem;
+		}
+		.cards {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 0em 3em;
+            padding: 1.5em;
+		}
+		.card--middle {
+			grid-row: 2/3;
+			grid-column: 1/3;
+			justify-self: center;
+           
+		}
+	}
+    .footer{
+        &__heading, .fa-tree{
+            font-size: 3.5rem;
+        }
+        &__wrapper{
+            margin-bottom: 2em;
+        }
+        .items{
+            &__heading{
+                font-size: 3rem;
+                
+            }
+            &__item{
+                font-size: 2rem;
+            }
+        }
+        &__text{
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@media(min-width: 576px){
+    .nav{
+        &__header, .fa-tree{
+            font-size: 3rem;
+        }
+        &__item{
+            padding: 0.5em;
+            font-size: 2.5rem;
+        }
+    }
+}
