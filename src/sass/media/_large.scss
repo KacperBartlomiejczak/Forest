@@ -1,9 +1,12 @@
 @media (min-width: 992px) {
 	.nav {
-		position: relative;
-		left: 50%;
-		max-width: 1400px;
-		transform: translateX(-50%);
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		&__container{
+			min-width: 1400px;
+			max-width: 1400px;
+		}
 		.hamburger {
 			display: none;
 		}
