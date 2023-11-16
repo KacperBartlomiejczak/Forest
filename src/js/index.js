@@ -4,6 +4,7 @@ const navItem = document.querySelectorAll(".nav__item")
 const yearEl = document.querySelector(".footer__year")
 
 let year = new Date().getFullYear()
+
 //Nav toggle
 let isNavOpen = false
 const toggleNavHandler = event => {
@@ -17,7 +18,6 @@ const toggleNavHandler = event => {
 		isNavOpen = false
 	}
 }
-
 
 yearEl.textContent = year
 //Event listners
