@@ -1,4 +1,5 @@
 @media (min-width: 992px) {
+	//nav
 	.nav {
 		display: grid;
 		justify-content: center;
@@ -25,6 +26,8 @@
 			padding: 0 0.8em;
 		}
 	}
+
+	//header
 	.header {
 		display: flex;
 		justify-content: center;
@@ -42,6 +45,7 @@
 			font-size: 2rem;
 		}
 	}
+	//about
 	.about {
 		display: flex;
 		justify-content: center;
@@ -76,6 +80,7 @@
 		max-width: 1500px;
 		margin: 4em 0;
 	}
+	//add
 	.ad {
 		min-height: 200px;
 		background-image: url("../../dist/img/girl-desktop.jpeg");
@@ -84,6 +89,7 @@
 			padding: 4rem 15em;
 		}
 	}
+	//offer
 	.offer {
 		.cards {
 			display: grid;
@@ -94,6 +100,7 @@
 			grid-column: 2/3;
 		}
 	}
+	//footer
 	.footer {
 		&__container {
 			display: grid;
