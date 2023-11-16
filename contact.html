@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest</title>
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="stylesheet" href="./dist/css/contact.min.css">
+</head>
+
+<body>
+    <main>
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__wrapper">
+                    <i class="fa-solid fa-tree"></i>
+                    <h1 class="nav__header">Forest</h1>
+                </div>
+                <button class="hamburger">
+                    <div class="hamburger__bar"></div>
+                </button>
+                <div class="nav__items">
+                    <a href="./index.html" class="nav__item nav__item">Home</a>
+                    <a href="./index.html/#about" class="nav__item">O nas</a>
+                    <a href="#offer" class="nav__item">Oferta</a>
+                    <a href="./contact.html" class="nav__item">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+        <section class="contact">
+            <form action="mail.php" method="post" class="contact-form">
+
+                <div class="contact-box">
+                    <label for="name">Imię:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="contact-box">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="contact-box">
+                    <label for="msg">Wiadomość:</label>
+                    <textarea name="msg" id="msg" required></textarea>
+                </div>
+
+                <button>Wyślij</button>
+
+            </form>
+
+            <p class="msg-status"></p>
+        </section>
+        <section class="ad">
+            <h1 class="ad__heading">Przygoda dla całej rodziny</h1>
+        </section>
+        <section class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8980500953185!2d19.890263912478133!3d50.0881956132615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sMcDonald&#39;s!5e0!3m2!1sen!2spl!4v1700143249344!5m2!1sen!2spl"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <i class="fa-solid fa-tree"></i>
+                    <h1 class="footer__heading">Forest</h1>
+                </div>
+                <ul class="footer__items">
+                    <ul class="items">
+                        <h3 class="items__heading">O nas</h3>
+                        <li class="items__item"><a href="#">Historia</a></li>
+                        <li class="items__item"><a href="#">Parki</a></li>
+                        <li class="items__item"><a href="#">Opinie</a></li>
+                    </ul>
+                    <ul class="items">
+                        <h3 class="items__heading">Nasza Firma</h3>
+                        <li class="items__item"><a href="#">Praca</a></a></li>
+                        <li class="items__item"><a href="#">Kadry</a></li>
+                        <li class="items__item"><a href="#">Zarząd</a></li>
+                    </ul>
+                    <ul class="items">
+                        <h3 class="items__heading">Dokumenty</a></h3>
+                        <li class="items__item"><a href="#">Wnioski</a></li>
+                        <li class="items__item"><a href="#">Rezerwacje</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <p class="footer__text">&copy; <span class="footer__year"></span> Forest Group Company Ltd.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="./dist/js/index.min.js"></script>
+    <script src="./dist/js/contact.min.js"></script>
+</body>
+
+</html>

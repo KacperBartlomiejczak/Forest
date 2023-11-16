@@ -1,0 +1,99 @@
+.contact {
+	display: flex;
+	justify-content: center;
+}
+.contact-form {
+	padding: 30px;
+	width: 600px;
+	margin-top: 5em;
+	background-color: #fff;
+	border-radius: 24px;
+}
+
+.contact-box {
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0;
+}
+
+.contact-form label {
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+	padding: 15px;
+	font-size: 16px;
+	font-family: inherit;
+	border: 2px solid hsl(0, 0%, 67%);
+	border-radius: 12px;
+}
+
+.contact-form textarea {
+	resize: vertical;
+	min-height: 150px;
+}
+
+.contact-form button {
+	padding: 12px;
+	width: 100%;
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+
+.contact-form button:hover {
+	color: #fff;
+	background-color: hsl(220, 100%, 50%);
+}
+
+.msg-status {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50px;
+	padding: 30px;
+	width: 600px;
+	border-radius: 12px;
+	font-size: 24px;
+}
+
+.success {
+	display: flex;
+	background-color: hsl(143, 83%, 55%);
+}
+
+.error {
+	display: flex;
+	background-color: hsl(9, 100%, 64%);
+}
+
+.map {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	iframe {
+		height: 250px;
+		width: 350px;
+		padding: 2em;
+	}
+}
+@media (min-width: 768px) {
+	.map {
+		iframe {
+			height: 400px;
+			width: 600px;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.map {
+		iframe {
+			height: 500px;
+			width: 800px;
+		}
+	}
+}
