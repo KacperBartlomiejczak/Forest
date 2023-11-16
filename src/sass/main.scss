@@ -150,7 +150,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-image: url(../../dist/img/jungle-phone.jpeg);
+	background-image: url('../../dist/img/jungle-phone.jpeg');
 	background-size: cover;
 	background-position: center;
 	&__container {
@@ -218,7 +218,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(../../dist/img/girl-phone.jpeg);
+	background-image: url('../../dist/img/girl-phone.jpeg');
 	background-size: cover;
 	background-position: center;
 	z-index: 0;

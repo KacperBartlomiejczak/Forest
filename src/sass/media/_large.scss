@@ -3,7 +3,7 @@
 		display: grid;
 		justify-content: center;
 		align-items: center;
-		&__container{
+		&__container {
 			min-width: 1400px;
 			max-width: 1400px;
 		}
@@ -30,7 +30,7 @@
 		justify-content: center;
 		align-items: center;
 		min-height: 350px;
-		background-image: url("../../../dist/img/jungle-desktop.jpeg");
+		background-image: url("../../dist/img/jungle-desktop.jpeg");
 		&__heading {
 			font-size: 3rem;
 		}
